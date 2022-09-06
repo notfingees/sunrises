@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>845800011433-10cj8vdp3oilrhg8qnfdrmjo4blf45uu.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.845800011433-10cj8vdp3oilrhg8qnfdrmjo4blf45uu</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC8zNrI0HVrJCLOxZiDQexlYkLg-3jHSNw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>845800011433</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.sunrises.sunrises</string>
+	<key>PROJECT_ID</key>
+	<string>sunrises-d55fd</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sunrises-d55fd.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:845800011433:ios:1b59292396299db63a9bb8</string>
+</dict>
+</plist>

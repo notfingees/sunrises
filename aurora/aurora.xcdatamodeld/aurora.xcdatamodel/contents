@@ -1,4 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="FirstLogin" representedClassName="FirstLogin" syncable="YES" codeGenerationType="class">
+        <attribute name="firstLogin" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="HelperVariables" representedClassName="HelperVariables" syncable="YES" codeGenerationType="class">
+        <attribute name="currentUpdatedDate" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Interest" representedClassName="Interest" syncable="YES" codeGenerationType="class">
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="recommended" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="trending" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="user_added" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="LookForwardTo" representedClassName="LookForwardTo" syncable="YES" codeGenerationType="class">
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="importance" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="interest_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="interest_name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="phone" optional="YES" attributeType="String"/>
+        <attribute name="today_notification" optional="YES" attributeType="String"/>
+        <attribute name="tomorrow_notification" optional="YES" attributeType="String"/>
+        <attribute name="user_hash" optional="YES" attributeType="String"/>
+        <attribute name="user_id" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="UserLftIndex" representedClassName="UserLftIndex" syncable="YES" codeGenerationType="class">
+        <attribute name="todayIndex" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="tomorrowIndex" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="UserLftToday" representedClassName="UserLftToday" syncable="YES" codeGenerationType="class">
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="importance" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="index" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="interest_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="interest_name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="UserLftTomorrow" representedClassName="UserLftTomorrow" syncable="YES" codeGenerationType="class">
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="importance" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="index" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="interest_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="interest_name" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="FirstLogin" positionX="-45" positionY="90" width="128" height="58"/>
+        <element name="HelperVariables" positionX="-45" positionY="90" width="128" height="58"/>
+        <element name="Interest" positionX="-63" positionY="-18" width="128" height="148"/>
+        <element name="LookForwardTo" positionX="-54" positionY="-9" width="128" height="148"/>
+        <element name="User" positionX="-45" positionY="90" width="128" height="163"/>
+        <element name="UserLftIndex" positionX="-36" positionY="81" width="128" height="73"/>
+        <element name="UserLftToday" positionX="-45" positionY="36" width="128" height="163"/>
+        <element name="UserLftTomorrow" positionX="-45" positionY="72" width="128" height="163"/>
+    </elements>
 </model>
