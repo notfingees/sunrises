@@ -1,0 +1,56 @@
+{"args": {"tokenId": 5, "price": 1231123}, "event": "Listed", "logIndex": 2, "transactionIndex": 8, "transactionHash": "0x12d840e9b3197cb71362fa2cdda7c0fd676c648b508df286c462eca21b425b02", "address": "0x4c881B2eb7182CbcFf9AF0Cbf903d02e712DD3a1", "blockHash": "0xd79732ce53f606b5285fec38e057ca568f1a8d264e373195c2924d285df3c6f3", "blockNumber": 11938648} <class 'str'>
+{'args': {'tokenId': 5, 'price': 1231123}, 'event': 'Listed', 'logIndex': 2, 'transactionIndex': 8, 'transactionHash': '0x12d840e9b3197cb71362fa2cdda7c0fd676c648b508df286c462eca21b425b02', 'address': '0x4c881B2eb7182CbcFf9AF0Cbf903d02e712DD3a1', 'blockHash': '0xd79732ce53f606b5285fec38e057ca568f1a8d264e373195c2924d285df3c6f3', 'blockNumber': 11938648} <class 'dict'>
+{"args": {"tokenId": 12, "price": 1000000000}, "event": "Listed", "logIndex": 12, "transactionIndex": 9, "transactionHash": "0x0e90bdaecbfea5a3a735d4a339f64fa09dd49108eb3acb3e88d75101f79b9406", "address": "0x4c881B2eb7182CbcFf9AF0Cbf903d02e712DD3a1", "blockHash": "0x68776253aac03ae6c78041b4cdd2f2f260214ac3c5e7ba830827504905aa5067", "blockNumber": 11956154} <class 'str'>
+{'args': {'tokenId': 12, 'price': 1000000000}, 'event': 'Listed', 'logIndex': 12, 'transactionIndex': 9, 'transactionHash': '0x0e90bdaecbfea5a3a735d4a339f64fa09dd49108eb3acb3e88d75101f79b9406', 'address': '0x4c881B2eb7182CbcFf9AF0Cbf903d02e712DD3a1', 'blockHash': '0x68776253aac03ae6c78041b4cdd2f2f260214ac3c5e7ba830827504905aa5067', 'blockNumber': 11956154} <class 'dict'>
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.7/site-packages/mysql/connector/connection_cext.py", line 516, in cmd_query
+    query_attrs=self._query_attrs)
+_mysql_connector.MySQLInterfaceError: Lost connection to MySQL server during query
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bitnami/python/inwriting/eventListener.py", line 133, in <module>
+    main()
+  File "/home/bitnami/python/inwriting/eventListener.py", line 124, in main
+    log_loop(listed_event_filter, 2)))
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 584, in run_until_complete
+    return future.result()
+  File "/home/bitnami/python/inwriting/eventListener.py", line 103, in log_loop
+    handle_event(PairCreated)
+  File "/home/bitnami/python/inwriting/eventListener.py", line 42, in handle_event
+    mycursor.execute(sql, val)
+  File "/home/bitnami/.local/lib/python3.7/site-packages/mysql/connector/cursor_cext.py", line 271, in execute
+    raw_as_string=self._raw_as_string)
+  File "/home/bitnami/.local/lib/python3.7/site-packages/mysql/connector/connection_cext.py", line 519, in cmd_query
+    sqlstate=exc.sqlstate)
+mysql.connector.errors.OperationalError: 2013 (HY000): Lost connection to MySQL server during query
+{"args": {"tokenId": 7, "price": 1000000000}, "event": "Listed", "logIndex": 3, "transactionIndex": 1, "transactionHash": "0x65eabb256a5668b0e702642af3cae2033b4f660607f434acd51d2f470b679f01", "address": "0x4c881B2eb7182CbcFf9AF0Cbf903d02e712DD3a1", "blockHash": "0x8a3a6f0e3999eb961c3bbf9d39e93f4e9d001563291b160a62119df2e3418351", "blockNumber": 11967443} <class 'str'>
+{'args': {'tokenId': 7, 'price': 1000000000}, 'event': 'Listed', 'logIndex': 3, 'transactionIndex': 1, 'transactionHash': '0x65eabb256a5668b0e702642af3cae2033b4f660607f434acd51d2f470b679f01', 'address': '0x4c881B2eb7182CbcFf9AF0Cbf903d02e712DD3a1', 'blockHash': '0x8a3a6f0e3999eb961c3bbf9d39e93f4e9d001563291b160a62119df2e3418351', 'blockNumber': 11967443} <class 'dict'>
+{"args": {"tokenId": 18, "price": 1000000}, "event": "Listed", "logIndex": 6, "transactionIndex": 6, "transactionHash": "0xfd431602d6befd0d520b14d91160a2505dae469da38a166ac7bee2e3cff01f08", "address": "0x4c881B2eb7182CbcFf9AF0Cbf903d02e712DD3a1", "blockHash": "0x4ff3dcc948d0c996085baa0fa9e6d5fce3038a9071e7cffcc706dc7f7635d100", "blockNumber": 11967473} <class 'str'>
+{'args': {'tokenId': 18, 'price': 1000000}, 'event': 'Listed', 'logIndex': 6, 'transactionIndex': 6, 'transactionHash': '0xfd431602d6befd0d520b14d91160a2505dae469da38a166ac7bee2e3cff01f08', 'address': '0x4c881B2eb7182CbcFf9AF0Cbf903d02e712DD3a1', 'blockHash': '0x4ff3dcc948d0c996085baa0fa9e6d5fce3038a9071e7cffcc706dc7f7635d100', 'blockNumber': 11967473} <class 'dict'>
+{"args": {"tokenId": 19, "price": 1000000000}, "event": "Listed", "logIndex": 17, "transactionIndex": 12, "transactionHash": "0xe2f85afcc8d2bf69a2225fccc1866c3b38e99d01ae6bff2b634935ba31985176", "address": "0x4c881B2eb7182CbcFf9AF0Cbf903d02e712DD3a1", "blockHash": "0xb17bf72b95a2c0cd8a2f1fa17a7e0f74e2abd5b1825b2eee9881a80e02c077ab", "blockNumber": 11967516} <class 'str'>
+{'args': {'tokenId': 19, 'price': 1000000000}, 'event': 'Listed', 'logIndex': 17, 'transactionIndex': 12, 'transactionHash': '0xe2f85afcc8d2bf69a2225fccc1866c3b38e99d01ae6bff2b634935ba31985176', 'address': '0x4c881B2eb7182CbcFf9AF0Cbf903d02e712DD3a1', 'blockHash': '0xb17bf72b95a2c0cd8a2f1fa17a7e0f74e2abd5b1825b2eee9881a80e02c077ab', 'blockNumber': 11967516} <class 'dict'>
+Traceback (most recent call last):
+  File "/home/bitnami/.local/lib/python3.7/site-packages/mysql/connector/connection_cext.py", line 516, in cmd_query
+    query_attrs=self._query_attrs)
+_mysql_connector.MySQLInterfaceError: Field 'timeStamp' doesn't have a default value
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bitnami/python/inwriting/eventListener.py", line 133, in <module>
+    main()
+  File "/home/bitnami/python/inwriting/eventListener.py", line 124, in main
+    log_loop(listed_event_filter, 2)))
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 584, in run_until_complete
+    return future.result()
+  File "/home/bitnami/python/inwriting/eventListener.py", line 103, in log_loop
+    handle_event(PairCreated)
+  File "/home/bitnami/python/inwriting/eventListener.py", line 42, in handle_event
+    mycursor.execute(sql, val)
+  File "/home/bitnami/.local/lib/python3.7/site-packages/mysql/connector/cursor_cext.py", line 271, in execute
+    raw_as_string=self._raw_as_string)
+  File "/home/bitnami/.local/lib/python3.7/site-packages/mysql/connector/connection_cext.py", line 519, in cmd_query
+    sqlstate=exc.sqlstate)
+mysql.connector.errors.DatabaseError: 1364 (HY000): Field 'timeStamp' doesn't have a default value
